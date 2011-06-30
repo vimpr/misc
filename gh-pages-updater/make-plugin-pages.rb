@@ -11,6 +11,7 @@ proc do
   output_dir = File.join(base, 'vimpr.github.com.git') unless output_dir
 end[]
 
+LATEST = '3.x'
 PREV = '2.3'
 Title = 'Vimperator plugins on vimpr'
 Langs = %w[ja en-US]
@@ -72,7 +73,7 @@ Langs.each do
           )}
           &nbsp;
           #{drop_anchor(
-            "nightly",
+            LATEST,
             "http://github.com/vimpr/vimperator-plugins/raw/master/#{File.basename(filename)}"
           )}
         </td>
